@@ -1,0 +1,22 @@
+<div class="container">
+    <form class="loginForm" #loginForm="ngForm" role="form" (submit)="login()"><br>
+        <h2>Welcome!</h2>
+        <div class="form-group has-success has-feedback">
+            <label for="fullname">Name</label>                
+            <input type="text" required minlength = '2' pattern="^[A-Za-z'-\w+( \w+)]+$" [(ngModel)]="user.username" id="username" placeholder="Full Name" name="username">
+        </div>
+        <div class="form-group has-success has-feedback">
+            <label for="email">Email</label>
+            <input type="email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" [(ngModel)]="user.email" id="email" placeholder="Email" name="email">
+        </div>
+        <div class="form-group has-success has-feedback">
+            <label for="password">Password</label>
+            <input type="password" required minlength = '6' pattern="^[a-zA-Z0-9]+$" [(ngModel)]="user.password" id="password" placeholder="Password" name="password">
+        </div>
+        <div class="forgotPassword">
+             <a href="javascript:void(0)">Forgot Password?</a>
+        </div>
+        <button [disabled]="!loginForm.form.valid" type="submit" name="action">Login</button>
+        <span id="err"><small>{{errorMsg}}</small></span>
+    </form>
+</div>

@@ -1,0 +1,66 @@
+.navbar-right {
+    float: right !important;
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+.navbar-nav > li {
+    float: left;
+}
+.navbar {
+    border: 1px solid #e8e8e8;
+}
+.logo {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+    border-radius: 30px;
+    background: #e7ebed;
+    margin-top: 14px;
+    margin: 14px 15px 0px 14px;
+}
+.navbar-header .logo > img {
+    padding-left: 17px;
+    padding-top: 14px;
+}
+.navbar .nav > li > a {
+    line-height: 50px;
+}
+.navbar-header {
+    display: none;
+}
+.navbar-fixed-top {
+    z-index: 1;
+}
+.navbar-header h1 {
+    padding-top: 11px;
+    font-family: font91409;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #272727;
+}
+@media screen and (max-width: 768px) { 
+    .navbar-header {
+        display: block;
+    }
+}
+/* Change styles on extra small screens */
+@media screen and (max-width: 480px) { 
+    menu {
+       margin-top: 4em; 
+    }
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container > .navbar-header {
+        margin: 0;
+    }
+}

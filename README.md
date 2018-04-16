@@ -1,4 +1,4 @@
-# GoogleBookSearchApi Angular Application
+# GoogleBookSearchApi - Angular 2 Application
 
 This is a Angular 2 single page app which provides the user with the ability to search for and view data from the Google Books Api. 
 The app should only be available for authenticated user :
